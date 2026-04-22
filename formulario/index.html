@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Cadastros</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(180deg, #f7fbf9 0%, #e4efe9 100%);
+      color: #21302b;
+    }
+
+    .card {
+      width: min(520px, calc(100% - 32px));
+      background: #fff;
+      border: 1px solid #c5d8d0;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 14px 28px rgba(16, 53, 43, 0.08);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+    }
+
+    p {
+      margin: 0 0 18px;
+      color: #566a64;
+    }
+
+    .actions {
+      display: grid;
+      gap: 10px;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid #157c62;
+      color: #157c62;
+      background: #fff;
+    }
+
+    a.primary {
+      background: #157c62;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Cadastro do Guia do Turista</h1>
+    <p>Escolha para onde deseja ir:</p>
+    <div class="actions">
+      <a class="primary" href="./formulario.html">Abrir formulario</a>
+      <a href="./admin.html">Abrir pagina admin</a>
+    </div>
+  </main>
+</body>
+</html>
